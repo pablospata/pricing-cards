@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+body {
+    background-color: #f7f7f7;
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    height: 120vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    color: hsl(233, 13%, 49%);
+    margin: 3.3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle {
+    margin-top: 2rem;
+    color: hsl(234, 14%, 74%);
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btn {
+    margin: 0 1rem;
+}
+
+.checkbox {
+    display: none;
+}
+
+.sub {
+    background:
+        linear-gradient(135deg,
+            rgb(163, 168, 249, 1) 0%,
+            rgb(105, 111, 221, 1) 100%);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 1.6rem;
+    width: 3.3rem;
+    border-radius: 1.6rem;
+    padding: 0.3rem;
+}
+
+.circle {
+    background-color: #fff;
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+}
+
+.checkbox:checked+.sub {
+    justify-content: end;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    color: hsl(233, 13%, 49%);
+    border-radius: 0.8rem;
+}
+
+.cards .card.active {
+    background:
+        linear-gradient(135deg,
+            rgb(163, 168, 249, 1) 0%,
+            rgb(105, 111, 221, 1) 100%);
+    color: #fff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+ul {
+    margin: 2.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+ul li {
+    list-style: none;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+ul li.price {
+    font-size: 3rem;    
+    padding-bottom: 2rem;
+}
+
+.shadow {
+    box-shadow: -5px 5px 15px 1px rgb(0, 0, 0, 0.1);
+}
+
+.btn {
+    margin-top: 1rem;
+    height: 2.6rem;    
+    width: 13.3rem;
+    background:  linear-gradient(135deg,
+    rgb(163, 168, 249, 1) 0%,
+    rgb(105, 111, 221, 1) 100%);
+    border: 0;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg,
+    rgb(143, 148, 229, 1) 0%,
+    rgb(85, 91, 201, 1) 100%);
+}
+
+.btn:active {
+    background: linear-gradient(135deg,
+    rgb(123, 128, 209, 1) 0%,
+    rgb(65, 71, 181, 1) 100%);
+    transform: translateY(2px);
+}
+
+.active-btn {
+    background:  #fff;    
+    color: hsl(237, 63%, 64%);
+}
+
+.btn.active-btn:hover {
+    background: linear-gradient(135deg,
+    rgb(240, 241, 248) 0%,
+    rgb(240, 241, 248) 0%);
+}
+
+.active-btn:active {
+    background: hsl(237, 63%, 84%);
+    color: hsl(237, 63%, 44%);
+    transform: translateY(2px);
+}
+
+.bottom-bar {
+    border-bottom: 2px solid hsl(240, 8%, 85%, 0.583);
+}
